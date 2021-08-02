@@ -13,7 +13,7 @@ import (
 func constructRequestBody(args []string) []byte {
 
 	body, _ := json.Marshal(map[string]string{
-		"taskName": args[1],
+		"name": args[1],
 	})
 
 	return body
